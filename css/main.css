@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:rgb(249, 219, 224);
+    --light-main-color:rgb(245, 225, 228);
+    --font-color:rgb(150, 41, 88);
+    --second-color:rgb(180, 5, 81);
+    --important-word:rgb(216, 140, 160);
+    --text-color:rgb(226, 109, 128);
+    --white-color:white;
+    --black-text:black;
+    --padding-text:1rem;
+    --margin-text:1rem;
+}
+/* home section */
+#home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../img/giftbackground.jpg);
+    background-size: 100% 100%;
+}
+#home .content{
+    width:40%;
+    padding-left: var(--padding-text);
+}
+#home h1{
+    font-weight: bold;
+    color: var(--font-color);
+}
+    
+#home h3{
+    color: var(--second-color);
+    font-size: 2.5rem;
+    font-style: italic;
+}
+#home p{
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.shop-btn, .about-btn,.form-btn {
+    display: inline-block;
+    margin-top: var(--margin-text);
+    padding: 13px 28px;
+    background-color: var(--important-word);
+    color: var(--white-color);
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.shop-btn:hover ,.about-btn:hover,.form-btn:hover {
+    background-color: var(--main-color);
+    transform: translateY(-2px);
+}
+/* about section */
+.about-content h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: var(--margin-text);
+    color: var(--font-color);
+}
+
+.about-content h3 span {
+    color:var(--important-word);
+}
+
+.about-content p {
+    line-height: 1.8;
+    color: var(--font-color);
+    margin-bottom: var(--margin-text);
+}
+
+.about-bold {
+    font-weight: bold;
+    color: var(--black-text) !important;
+}
+/* Gift collection best */
+#gift-collection h2{
+    color: var(--font-color);
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: var(--padding-text);
+}
+.image-container {
+    height: 300px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.price {
+    color: var(--font-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.card-category{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--font-color);
+}
+.carousel-control-prev,.carousel-control-next{
+    width:5%;
+}
+
+/* contact section */
+#contact h2{
+    text-align: center;
+    color:var(--font-color);
+    font-size: 3rem;
+}
+.contact-form {
+    padding: 30px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.contact-form input, .contact-form textarea{
+    border: 2px solid var(--second-color);
+}
+.contact-form input:focus,.contact-form textarea:focus{
+    border-color:var(--black-text) ;
+    box-shadow: 5px 6px rgba(0, 0, 0, 0.2);
+}
+.contact-form label{
+    font-size: 1.5rem;
+}
+
+#contact .content {
+    background-color: var(--main-color);
+    border-radius: 10rem;
+    padding: 3rem;
+    text-align: center;
+}
+#contact .content h3{
+    color: var(--font-color);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: var(--padding-text);
+}
+#contact .content-text h5 {
+    color: var(--font-color);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+#contact .content-text h5 i {
+    margin-right: 8px;
+}
+
+#contact .content-text p {
+    color: var(--black-text);
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
