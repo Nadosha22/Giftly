@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-color:rgb(249, 219, 224);
+    --light-main-color:rgb(250, 229, 232);
+    --light-second-color:rgb(251, 213, 218);
+    --font-color:rgb(200, 54, 117);
+    --second-color:rgb(180, 5, 81);
+}
+body{
+    background-color: var(--light-second-color);
+}
+
+/* Side Bar */
+.side-bar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 15rem;
+    background-color: white;
+    padding: 2rem 1rem;
+}
+.side-bar .logo{
+    font-size: 2.5rem;
+    color: var(--font-color);
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+}
+.menu-item {
+    text-decoration: none;
+    color: #777;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+.menu-item:hover {
+    background-color: #f9e7eb;
+    color: #c76f82;
+}
+
+main{
+    margin-left: 15rem;
+    padding: 2.5rem;
+}
+section{
+    padding: 0 2rem;
+}
+main section {
+    display: none;
+}
+
+main section:target {
+    display: block;
+}
+
+/* Section dashboard overview */
+.dash-overview{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    padding: 1rem 0 2rem 0;
+}
+.dash-card {
+    flex: 1 1 10rem;
+    background-color: var(--second-color);
+    color: white;
+    padding: 22px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
+}
+.dash-card i{
+    font-size: 2rem;
+}
+.dash-card .text{
+    text-align: center;
+    padding-left: 1.5rem;
+    line-height: 2rem;
+}
+
+
+
+/* section gift, order, customer*/
+.section-head h2{
+    font-size: 2.5rem;
+    color: var(--second-color);
+}
+.section-head p{
+    font-size: 1.5rem;
+    font-style: italic;
+    padding: 1rem 0;
+}
+.section-content{
+    background-color: var(--light-main-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0.5rem 0.5rem rgba(128, 128, 128,0.5);
+}
+
+/*table  gift, order, customer */
+table{
+    width: 100%;
+}
+th,td{
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--second-color);
+}
+th{
+    color: var(--font-color);
+    font-size: 1.5rem;
+}
+td{
+    font-size: 1.2rem;
+}
+/* section gifts */
+#gifts .section-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-btn{
+    border: none;
+    background-color: var(--second-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.add-btn:hover{
+    background-color: var(--light-main-color);
+    color: black;
+}
+
+.edit-btn,.delete-btn{
+    border: 1px solid var(--important-word);
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.edit-btn,.delete-btn {
+    background-color: #eee;
+}
+
+/* section orders */
+.status{
+    padding: 5px 0.5rem;
+    border-radius: 1rem;
+    font-size: 14px;
+} 
+.delivered{
+    background-color: rgb(204, 247, 221);
+    color: rgb(44, 155, 87);
+}
+.pending {
+    background-color: rgb(255, 240, 208);
+    color: rgb(200, 138, 32);
+}
+.shipped {
+    background-color: rgb(211, 227, 251);
+    color: rgb(71, 126, 199);
+}
+
+/* section review */
+.review-content{
+    display: flex;
+    flex-flow: row wrap;
+    gap:1rem;
+}
+.review-card{
+    width:15.5rem;
+    background-color: var(--light-main-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px var(--second-color);
+}
+.info-text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.info-text .icons{
+    color: gold;
+}

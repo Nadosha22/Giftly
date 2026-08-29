@@ -126,8 +126,6 @@
 .contact-form {
     padding: 30px;
     border-radius: 25px;
-    background-color: white;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 .contact-form input, .contact-form textarea{
     border: 2px solid var(--second-color);
@@ -139,32 +137,29 @@
 .contact-form label{
     font-size: 1.5rem;
 }
-
-#contact .content {
-    background-color: var(--main-color);
-    border-radius: 10rem;
-    padding: 3rem;
+.contact-info{
     text-align: center;
-}
-#contact .content h3{
+    font-size: 2.5rem;
     color: var(--font-color);
-    font-size: 2rem;
-    font-weight: bold;
+    font-style: italic;
+    padding-bottom: 1.5rem;
+}
+.contact-card{
+    background-color: var(--light-main-color);
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
-    padding-bottom: var(--padding-text);
+    font-size: 1.5rem;
+    box-shadow: 5px 5px var(--second-color);
+    transform: translateY(0);
+    transition:all 0.5s;
 }
-#contact .content-text h5 {
+.contact-card i{
+    font-size: 2.5rem;
     color: var(--font-color);
-    font-size: 1.4rem;
-    margin-bottom: 5px;
+    padding-bottom: 0.5rem;
 }
-
-#contact .content-text h5 i {
-    margin-right: 8px;
-}
-
-#contact .content-text p {
-    color: var(--black-text);
-    font-size: 1.1rem;
-    margin-bottom: 25px;
+.contact-card:hover{
+    transform: translateY(10px) scale(1.03);
 }
