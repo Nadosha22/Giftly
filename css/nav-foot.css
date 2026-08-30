@@ -57,25 +57,27 @@ header a:hover {
     color: white !important;
 }
 .footer{
-    background-color: var(--light-main-color);
+    background-color: var(--font-color);
     padding: 2rem 0;
+    color: var(--main-color);
 }
 
 .footer .foot-1 h2{
     font-size: 3rem;
-    color: var(--font-color);
+    color: white;
 }
 .foot-1 p{
     padding-top: 1rem;
     font-size: 1.5rem;
     font-style: italic;
+    color: var(--main-color);
 }
 .foot-2{
     padding-left: 3rem;
 }
-.foot-2 h3,.foot-3 h3 {
+.foot-2 h3,.foot-3 h3{
     font-size: 1.6rem;
-    color: var(--font-color);
+    color: white;
     margin-bottom: 1.5rem;
 }
 .foot-2 ul{
@@ -87,47 +89,45 @@ header a:hover {
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
 }
-.foot-2 ul li:hover a{
-    color: white !important;
+.foot-2 ul a{
+    color: var(--main-color) !important;
+}
+.foot-2 ul a:hover{
+    color: black !important;
 }
 .foot-3 i{
     font-size: 1.5rem;
-    color: var(--second-color) !important;
+    color: var(--main-color) !important;
 }
 .foot-3 i:hover{
-    color: white !important;
+    color: black !important;
 }
 
-@media screen and (max-width:786px) {
+@media screen and (max-width:786px){
     .fa-bars {
         display: inline;
         padding: 6px;
         font-weight: bold;
         font-size: 30px;
     }
-
-    header nav {
+    header nav{
         background-color: var(--main-color);
         position: absolute;
         left: 0;
         right: 0;
         top: 100%;
     }
-
-    header nav ul {
+    header nav ul{
         flex-direction: column;
         padding: 12px;
         display: none;
     }
-
-    nav li {
+    nav li{
         border: 3px solid var(--second-color);
         padding: 8px;
         text-align: center;
     }
-
-    #check:checked~nav >ul {
+    #check:checked~nav >ul{
         display: flex;
     }
-
 }
