@@ -1,0 +1,90 @@
+:root{
+    --main-color: rgb(249, 219, 224);
+    --font-color: rgb(150, 41, 88);
+    --second-color: rgb(180, 5, 81);
+}
+.allteam{
+    padding: 5rem 5rem;
+    background-color: var(--main-color);
+}
+/* Team Heading */
+.teamhead{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.teamhead h1{
+    margin: 1rem;
+    color: var(--font-color);
+    font-size: 2rem;
+}
+.teamhead p{
+    color: var(--second-color);
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: capitalize;
+}
+/* Team Container */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+/* Team Card */
+.team-card{
+    width: 300px;
+    padding: 1rem 1rem;
+    background: pink;
+    border-radius: 1.5rem;
+    text-align: center;
+    box-shadow: 0 5px 5px 5px rgba(118, 4, 54, 0.5);
+    transition: 0.5s;
+}
+
+.team-card:hover{
+    transform: translateY(-10px);
+}
+#leader{
+    background-color: rgb(243, 233, 235);
+    padding: 2px 4px;
+    border-radius: 15px;
+    width:fit-content;
+    text-align: start;
+}
+.team-card .symbol{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: rgb(251, 232, 235);
+    border: 5px solid rgb(245, 143, 156);
+    box-shadow: 0 7px 20px rgba(180, 5, 81, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.symbol span{
+    color: var(--second-color);
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.team-card .team-info{
+    padding-top: 0.5rem;
+}
+.team-info h2{
+    color: rgb(148, 6, 30);
+    font-size: 2rem;
+}
+.team-info h3{
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.social i{
+    font-size: 2rem;
+}
+.social i:hover{
+    color: white;
+}

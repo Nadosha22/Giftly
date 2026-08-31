@@ -102,6 +102,14 @@ header a:hover {
 .foot-3 i:hover{
     color: black !important;
 }
+.foot-3 p{
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.foot-3 p a{
+    color: var(--main-color) !important;
+}
 
 @media screen and (max-width:786px){
     .fa-bars {
