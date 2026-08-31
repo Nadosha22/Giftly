@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giftly - Cart</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav-foot.css">
+     
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="fa-solid fa-bars"></label>
+        <p id="logo"><a href=""><i class="fa-solid fa-gift"></i> Giftly</a></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html#dashboard">DashBoard</a></li>
+                <li><a href="index.html#about">AboutUs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="allgift.html">AllGifts</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="allgift.html#women-gifts">Women</a></li>
+                        <li><a class="dropdown-item" href="allgift.html#men-gifts">Men</a></li>
+                        <li><a class="dropdown-item" href="allgift.html#children-gifts">Children</a></li>
+                        <li><a class="dropdown-item" href="categories.html">AllCategories</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="" class="fa-solid fa-magnifying-glass"></a>
+            <a href="../html/login.html" class="fa-solid fa-user"></a>
+            <a href="../html/cart.html" class="fa-solid fa-cart-shopping"></a>
+        </div>
+    </header>
+    <main>
+        <h2>Your Cart</h2>
+        <p>Review Your Selected Gifts</p>
+        <div class="cart-content">
+            <div class="cart-items">
+                <div class="cart-container">
+                    <img src="photo_2026-08-29_17-54-36.jpg" alt="Handbag">
+                    <div class="item-info">
+                        <h2>Handbag</h2>
+                        <p>$60</p>
+                        <div class="quantity">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <button class="remove">Remove</button>
+                </div>
+                <div class="cart-container">
+                    <img src="photo_2026-08-29_02-21-27.jpg" alt="Flower Box">
+                    <div class="item-info">
+                        <h2>Flower Box</h2>
+                        <p>$50</p>
+                        <div class="quantity">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <button class="remove">Remove</button>
+                </div>
+                <div class="cart-container">
+                    <img src="photo_2026-08-29_02-32-28.jpg" alt="Jewelry Box">
+                    <div class="item-info">
+                        <h2>Jewelry Box</h2>
+                        <p>$800</p>
+                        <div class="quantity">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <button class="remove">Remove</button>
+                </div>
+            </div>
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <p>Subtotal:
+                    <span>$910</span>
+                </p>
+                <p>Shipping:
+                    <span>$30</span>
+                </p>
+                <hr>
+                <h3>Total:
+                    <span>$940</span>
+                </h3>
+                <button>Checkout</button>
+            </div>
+
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="foot-1">
+                        <h2>Giftly <i class="fa-solid fa-gift"></i></h2>
+                        <p>Making every moment special with the perfect gift. Find something beautiful for everyone you
+                            love.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="foot-2">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#gift-collection">Best Sellers</a></li>
+                            <li><a href="allgift.html">All Gifts</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="foot-3 mb-5">
+                            <h3>Our Social Media</h3>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <p class="pt-5">&copy; 2026 Giftly. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

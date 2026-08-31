@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Categories</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/catogry.css">
+    <link rel="stylesheet" href="../css/nav-foot.css">
+
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="fa-solid fa-bars"></label>
+        <p id="logo"><a href=""><i class="fa-solid fa-gift"></i> Giftly</a></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html#dashboard">DashBoard</a></li>
+                <li><a href="index.html#about">AboutUs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="allgift.html">AllGifts</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="allgift.html#women-gifts">Women</a></li>
+                        <li><a class="dropdown-item" href="allgift.html#men-gifts">Men</a></li>
+                        <li><a class="dropdown-item" href="allgift.html#children-gifts">Children</a></li>
+                        <li><a class="dropdown-item" href="categories.html">AllCategories</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="" class="fa-solid fa-magnifying-glass"></a>
+            <a href="../html/login.html" class="fa-solid fa-user"></a>
+            <a href="../html/cart.html" class="fa-solid fa-cart-shopping"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="cat-t">
+            <div class="container text-center">
+                <h1>Gift Categories</h1>
+                <p>Find the perfect gift for everyone you love</p>
+            </div>
+        </section>
+        <section class="by-person">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Shop by Person</h2>
+                    <p>Find a special gift for someone special</p>
+                </div>
+                <div class="row g-4">
+                    <div id="Women" class="col-12 col-sm-6 col-lg-4 ">
+                        <div class="card h-100  border-0 shadow-sm person-card">
+                            <img src="../img/WomenTextStyle.jpg" class="card-img-top" alt="">
+                            <div class=" text-center person-info">
+                                <h3 class="card-title">Women</h3>
+                                <p class="card-text text-secondary">Elegant gifts for her</p>
+                                <a href="allgift.html#women-gifts" class="text-decoration-none fw-bold ">Shop Women
+                                    <span><i class=" fa-solid fa-arrow-right"></i></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Men" class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100  border-0 shadow-sm person-card">
+                            <img src="../img/MenTextStyle.jpg" class="card-img-top" alt="">
+                            <div class=" text-center person-info">
+                                <h3 class="card-title">Men</h3>
+                                <p class="card-text text-secondary">Elegant gifts for him</p>
+                                <a href="allgift.html#men-gifts" class="text-decoration-none fw-bold ">Shop Men <span><i
+                                            class=" fa-solid fa-arrow-right"></i></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="children" class="col-12 col-sm-6 col-lg-4">
+                        <div class="card h-100  border-0 shadow-sm person-card">
+                            <img src="../img/KidTextStyle.jpg" class="card-img-top" alt="">
+                            <div class="text-center person-info">
+                                <h3 class="card-title">Children</h3>
+                                <p class="card-text text-secondary">Elegant gifts for her</p>
+                                <a href="allgift.html#children-gifts" class="text-decoration-none fw-bold ">Shop
+                                    Children <span><i class=" fa-solid fa-arrow-right"></i></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Shop by Occasion -->
+        <section class="occasion-section">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Shop by Occasion</h2>
+                    <p>Make every moment unforgettable</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4 ">
+                        <div class="occasion-card">
+                            <div class="occasion-icon">
+                                <i class="fa-solid fa-cake-candles"></i>
+                            </div>
+                            <h3>Birthday</h3>
+                            <p>Make their birthday extra special</p>
+                            <span><a href="allgift.html">Explore Gifts</a></span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="occasion-card">
+                            <div class="occasion-icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <h3>Anniversary</h3>
+                            <p>Celebrate your special memories</p>
+                            <span><a href="allgift.html">Explore Gifts</a></span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="occasion-card">
+                            <div class="occasion-icon">
+                                <i class="fa-solid fa-ring"></i>
+                            </div>
+                            <h3>Wedding</h3>
+                            <p>Beautiful gifts for the happy couple</p>
+                            <span><a href="allgift.html">Explore Gifts</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Shop by Budget -->
+        <section class="budget-section">
+            <div class="container text-center my-5">
+                <h2>Shop by Budget</h2>
+                <p>
+                    Find something perfect for every budget
+                </p>
+                <div class="row justify-content-center g-3 mt-3">
+                    <div class="col-6 col-md-3 col-lg-4">
+                        <a href="#" class="budget-card">
+                            Under $25
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-4">
+                        <a href="#" class="budget-card">
+                            $25 - $100
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-4">
+
+                        <a href="#" class="budget-card">
+                            up $100
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="foot-1">
+                        <h2>Giftly <i class="fa-solid fa-gift"></i></h2>
+                        <p>Making every moment special with the perfect gift. Find something beautiful for everyone you
+                            love.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="foot-2">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#about">About Us</a></li>
+                            <li><a href="index.html#gift-collection">Best Sellers</a></li>
+                            <li><a href="allgift.html">All Gifts</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="foot-3 mb-5">
+                        <h3>Our Social Media</h3>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <p class="pt-5">&copy; 2026 Giftly. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

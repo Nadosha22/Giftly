@@ -1,0 +1,97 @@
+.auth-container{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    
+}
+.auth-forms{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.form-box{
+    display: flex;
+    flex-direction: column;
+
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(249,219,224);
+    color: rgb(150, 41, 88);
+    min-height: 100vh;
+}
+
+.form-box{
+    background-color: white;
+    padding: 35px;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0 , 0.1);
+}
+.form-box h2{
+    text-align: center;
+    color: #d63384;
+    margin-bottom: 10px;
+}
+.form-box p{
+    text-align: center;
+    color: #777;
+}
+.form-box label{
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #444;
+    font-weight: bold;
+}
+.form-box input{
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.form-box input:focus{
+    border-color:#d63384 ;
+    box-shadow: 0 0 5px rgba(214, 51 , 132, 0.2);
+}
+.form-box button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #d63384;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.form-box button:hover {
+    background-color: #b52b6f;
+    transform: translateY(-2px);
+}
+
+
+.remember label {
+    margin: 0;
+    font-weight: normal;
+    color: #666;
+}
+
+.remember a {
+    color: #d63384;
+    text-decoration: none;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+}
+.auth-container .logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
