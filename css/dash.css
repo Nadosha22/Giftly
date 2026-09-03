@@ -242,4 +242,10 @@ td{
     table {
         min-width: 700px;
     }
+    th{
+        font-size: 1rem;
+    }
+    td{
+        font-size: 1rem;
+    }
 }
