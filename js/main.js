@@ -17,7 +17,7 @@ acessdash.addEventListener("click",(event)=>{
     var username=prompt("This page is for admin!\nPlease enter the user name")
     var userpass=prompt("Enter the password")
     if(username==adminname && userpass==adminpass){
-        window.location.href="../html/dashboard.html#dashboard";
+        window.location.href="html/dashboard.html#dashboard";
     }
     else{
         alert("The username or password maybe wrong\nThis page is only for admin")
