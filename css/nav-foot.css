@@ -137,11 +137,3 @@ header a:hover {
         display: flex;
     }
 }
-@media screen and (max-width:768px) {
-    .foot-2 ul{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        gap:2rem;
-    }
-}
