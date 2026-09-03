@@ -7,6 +7,16 @@ body{
     font-family: Arial, sans-serif;
     color: #333;
 }
+
+:root{
+    --main-color:rgb(249, 219, 224);
+    --light-main-color:rgb(245, 225, 228);
+    --font-color:rgb(150, 41, 88);
+    --second-color:rgb(180, 5, 81);
+    --important-word:rgb(216, 140, 160);
+    --text-color:rgb(226, 109, 128);
+    --white-color:white;
+}
 .cat-t {
     background-color: #fff4f6;
     padding: 8.5rem  0;
@@ -116,7 +126,7 @@ body{
 }
 
 
-/* ================= BUDGET ================= */
+/* budget */
 
 .budget-section {
     background-color: var(--white-color);
@@ -157,7 +167,7 @@ body{
 
 
 .gifts-section {
-    padding: 2.5rem 0;
+    padding: 10rem 0;
 }
 
 
@@ -339,7 +349,7 @@ body{
 #women-gifts,
 #men-gifts,
 #children-gifts {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 7rem;
 }
 
 #women-gifts h2,
@@ -349,56 +359,12 @@ body{
 }
 
 
-/* ================= PAGINATION ================= */
-
-.page-link {
-    color: var(--second-color);
-}
-
-.page-item.active .page-link {
-    background-color: var(--second-color);
-    border-color: var(--second-color);
-}
-
-
-/* ================= FOOTER ================= */
-
-.footer {
-    background-color: var(--black-text);
-    color: white;
-    padding: 40px 0;
-}
-
-.footer h3 {
-    color: var(--font-color);
-}
-
-.footer p {
-    color: #bbb;
-    margin-top: 10px;
-}
-
-.footer .copyright {
-    font-size: 13px;
-}
-
-
-
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 991px) {
-
-    .nav-icons {
-        margin-top: 15px;
-    }
-
-}
+/* res */
 
 
 @media (max-width: 576px) {
 
-    .gift-header h1 {
+    .cat-t h1 {
         font-size: 32px;
     }
 
@@ -408,7 +374,7 @@ body{
         gap: 15px;
     }
 
-    .sort-select {
+    .products-top select {
         width: 100%;
     }
 

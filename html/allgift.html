@@ -46,24 +46,22 @@
         </div>
     </header>
 
+
     <main>
         <section class="gifts-section">
             <div class="container">
-                <div class="search-box my-5">
+                <div class="search-box">
                     <div class="input-group">
-                        <span class="input-group-text">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </span>
-                        <input type="text" class="form-control" placeholder="Search for a gift...">
+                        <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" id="search" class="form-control" placeholder="Searchfor a gift..">
                     </div>
-
                 </div>
-
+            
                 <div class="row g-4 mb-5">
-                    <!-- CATEGORY -->
+                    <!-- catogry -->
                     <div class="col-12 col-md-4">
                         <label class="form-label">Category</label>
-                        <select class="form-select">
+                        <select id="category"  class="form-select">
                             <option selected>All Categories</option>
                             <option>Women</option>
                             <option>Men</option>
@@ -71,21 +69,20 @@
                         </select>
                     </div>
 
-                    <!-- OCCASION -->
+                    <!-- occasion -->
                     <div class="col-12 col-md-4">
                         <label class="form-label">Occasion</label>
-                        <select class="form-select">
+                        <select id="occasion" class="form-select">
                             <option selected>All Occasions</option>
                             <option>Birthday</option>
                             <option>Wedding</option>
-                            <option>Graduation</option>
                             <option>Valentine's Day</option>
                         </select>
                     </div>
-                    <!-- PRICE -->
+                    <!-- price -->
                     <div class="col-12 col-md-4">
                         <label class="form-label">Price</label>
-                        <select class="form-select">
+                        <select id="price" class="form-select">
                             <option selected>All Prices</option>
                             <option>Under 500 EGP</option>
                             <option>500 - 1000 EGP</option>
@@ -94,15 +91,14 @@
                         </select>
                     </div>
                 </div>
-                <!-- ================= PRODUCTS ================= -->
+                <!-- ptoductt -->
 
                 <div class="products-top d-flex justify-content-between align-items-center mb-4">
                     <h2>All Gifts</h2>
-                    <select class="form-select">
+                    <select id="sort" class="form-select">
                         <option selected>Sort by</option>
                         <option>Price: Low to High</option>
                         <option>Price: High to Low</option>
-                        <option>Newest</option>
                     </select>
                 </div>
                 <div class="row g-4">
@@ -119,7 +115,7 @@
                             </div>
                             <div class="product-info">
                                 <small>Women</small>
-                                <h3>Cute Box</h3>
+                                <h3 data-occasion="Birthday">Cute Box</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -137,35 +133,7 @@
                         </div>
                     </div>
                     <!-- PRODUCT 2 -->
-                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="product-card h-100">
-                            <div class="product-image">
-                                <span class="badge-custom">Best Seller</span>
-                                <button class="wishlist">
-                                    <i class="fa-regular fa-heart"></i>
-                                </button>
-                                <img src="../img/giftboxwomen2.jpg" alt="Women Gift">
-                            </div>
-                            <div class="product-info">
-                                <small>Women</small>
-                                <h3>Brown Box</h3>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <div class="product-bottom">
-                                    <strong>1800 EGP</strong>
-                                    <button class="cart-btn">
-                                        <i class="fa-solid fa-bag-shopping"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- PRODUCT 3 -->
+                   
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
@@ -178,7 +146,7 @@
                             </div>
                             <div class="product-info">
                                 <small>Men</small>
-                                <h3>Classic Gift</h3>
+                                <h3 data-occasion="Birthday">Classic Gift</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -207,7 +175,7 @@
                             </div>
                             <div class="product-info">
                                 <small>Men</small>
-                                <h3>Grey Box</h3>
+                                <h3 data-occasion="Birthday">Grey Box</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -217,6 +185,35 @@
                                 </div>
                                 <div class="product-bottom">
                                     <strong>600 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRODUCT 3 -->
+                      <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <span class="badge-custom">Best Seller</span>
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/giftboxwomen2.jpg" alt="Women Gift">
+                            </div>
+                            <div class="product-info">
+                                <small>Women</small>
+                                <h3 data-occasion="Birthday">Brown Box</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>1800 EGP</strong>
                                     <button class="cart-btn">
                                         <i class="fa-solid fa-bag-shopping"></i>
                                     </button>
@@ -236,8 +233,8 @@
                                     alt="Children Gift">
                             </div>
                             <div class="product-info">
-                                <small>Girl Child</small>
-                                <h3>Purple Box</h3>
+                                <small>Children</small>
+                                <h3 data-occasion="Birthday" >Purple Box</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -247,6 +244,27 @@
                                 </div>
                                 <div class="product-bottom">
                                     <strong>500 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/womenwed1.jpg" alt="Women Gift">
+                            </div>
+                            <div class="product-info">
+                                <small>Women</small>
+                                <h3 data-occasion="Wedding">Gold Spoons</h3>
+                                <div class="product-bottom">
+                                    <strong>2700 EGP</strong>
                                     <button class="cart-btn">
                                         <i class="fa-solid fa-bag-shopping"></i>
                                     </button>
@@ -267,7 +285,7 @@
                             </div>
                             <div class="product-info">
                                 <small>Women</small>
-                                <h3>Blue Bag</h3>
+                                <h3 data-occasion="Birthday">Blue Bag</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -295,7 +313,7 @@
                             </div>
                             <div class="product-info">
                                 <small>Men</small>
-                                <h3>Perfume </h3>
+                                <h3 data-occasion="Birthday">Perfume </h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -323,8 +341,8 @@
                                 <img src="../img/giftboxboy1.jpg"alt="Children Gift">
                             </div>
                             <div class="product-info">
-                                <small>Boy Child</small>
-                                <h3>School Box</h3>
+                                <small>Children</small>
+                                <h3 data-occasion="Birthday">School Box</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -334,6 +352,96 @@
                                 </div>
                                 <div class="product-bottom">
                                     <strong>800 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- PRODUCT 13 -->
+                                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <span class="badge-custom">Best Seller</span>
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/womenwed6.jpg"
+                                    alt="">
+                            </div>
+                            <div class="product-info">
+                               <small>Women</small>
+                                <h3 data-occasion="Wedding">Mug Glass</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>300 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- PRODUCT 13 -->
+                                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <span class="badge-custom">Best Seller</span>
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/menteshirt.jpg"
+                                    alt="">
+                            </div>
+                            <div class="product-info">
+                               <small>Men</small>
+                                <h3 data-occasion="Birthday">Beige T-Shirt</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>1050 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                           <!-- PRODUCT 13 -->
+                                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <span class="badge-custom">Best Seller</span>
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/womenwed3.jpg"
+                                    alt="">
+                            </div>
+                            <div class="product-info">
+                               <small>Women</small>
+                                <h3 data-occasion="Birthday">Crystal Cup</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>5570 EGP</strong>
                                     <button class="cart-btn">
                                         <i class="fa-solid fa-bag-shopping"></i>
                                     </button>
@@ -352,8 +460,8 @@
                                     alt="Children Gift">
                             </div>
                             <div class="product-info">
-                                <small>Boy Child</small>
-                                <h3>Small Cars Box</h3>
+                                <small>Children</small>
+                                <h3 data-occasion="Birthday">Small Cars Box</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -382,8 +490,8 @@
                                     alt="Children Gift">
                             </div>
                             <div class="product-info">
-                                <small>Girl Child</small>
-                                <h3>pink Box</h3>
+                                <small>Children</small>
+                                <h3 data-occasion="Birthday">pink Box</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -411,8 +519,8 @@
                                     alt="Children Gift">
                             </div>
                             <div class="product-info">
-                                <small>Girl Child</small>
-                                <h3>Barbie Toy</h3>
+                                <small>Children</small>
+                                <h3 data-occasion="Birthday">Barbie Toy</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -422,6 +530,27 @@
                                 </div>
                                 <div class="product-bottom">
                                     <strong>400 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/womenwedshose.jpg" alt="Women Gift">
+                            </div>
+                            <div class="product-info">
+                                <small>Women</small>
+                                <h3 data-occasion="Wedding">White Shose</h3>
+                                <div class="product-bottom">
+                                    <strong>950 EGP</strong>
                                     <button class="cart-btn">
                                         <i class="fa-solid fa-bag-shopping"></i>
                                     </button>
@@ -441,8 +570,8 @@
                                     alt="Children Gift">
                             </div>
                             <div class="product-info">
-                                <small>Boy Child</small>
-                                <h3>SpiderMan Box</h3>
+                               <small>Children</small>
+                                <h3 data-occasion="Birthday">SpiderMan Box</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -459,11 +588,217 @@
                             </div>
                         </div>
                     </div>
+                    <!-- PRODUCT 14 -->
+                                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <span class="badge-custom">Best Seller</span>
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/men1.jpg"
+                                    alt="Children Gift">
+                            </div>
+                            <div class="product-info">
+                               <small>Men</small>
+                                <h3 data-occasion="Birthday">ًWatch</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>900 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRODUCT 15 -->
+                                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/childb.jpg"
+                                    alt="Children Gift">
+                            </div>
+                            <div class="product-info">
+                               <small>Children</small>
+                                <h3 data-occasion="Birthday">car with choclete</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>500 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PRODUCT 16 -->
+                                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <span class="badge-custom">Best Seller</span>
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/women wedsho.jpg"
+                                    alt="">
+                            </div>
+                            <div class="product-info">
+                               <small>Women</small>
+                                <h3 data-occasion="Wedding">Bridal sandals </h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>2100 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- PRODUCT 17 -->
+                                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/womenwed.jpg"
+                                    alt="">
+                            </div>
+                            <div class="product-info">
+                               <small>Women</small>
+                                <h3 data-occasion="Wedding">Couple Mugs </h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>1500 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- PRODUCT 18 -->
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/womenwed4.jpg"
+                                    alt="">
+                            </div>
+                            <div class="product-info">
+                               <small>Women</small>
+                                <h3 data-occasion="Wedding">Glass Cup Set </h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>2330 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                         <!-- PRODUCT 19 -->
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/menwed3.jpg"
+                                    alt="">
+                            </div>
+                            <div class="product-info">
+                               <small>Men</small>
+                                <h3 data-occasion="Wedding">Beige Wedding Suit </h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>6000 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                           <!-- PRODUCT 20 -->
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/childcar.jpg"
+                                    alt="">
+                            </div>
+                            <div class="product-info">
+                               <small>Children</small>
+                                <h3 data-occasion="Birthday">Black Car </h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>11800 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- ================= WOMEN GIFTS ================= -->
+     <!-- women gift -->
         <section id="women-gifts" class="py-5">
             <div class="container">
                 <div class="text-center mb-5">
@@ -482,7 +817,7 @@
                             </div>
                             <div class="product-info">
                                 <small>Women</small>
-                                <h3>Cute Box</h3>
+                                <h3 data-occasion="Birthday">Cute Box</h3>
                                 <div class="product-bottom">
                                     <strong>1200 EGP</strong>
                                     <button class="cart-btn">
@@ -502,7 +837,7 @@
                             </div>
                             <div class="product-info">
                                 <small>Women</small>
-                                <h3>Brown Box</h3>
+                                <h3 data-occasion="Birthday">Brown Box</h3>
                                 <div class="product-bottom">
                                     <strong>1800 EGP</strong>
                                     <button class="cart-btn">
@@ -533,11 +868,131 @@
                             </div>
                         </div>
                     </div>
+                                  <div class="col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/womenwed1.jpg" alt="Women Gift">
+                            </div>
+                            <div class="product-info">
+                                <small>Women</small>
+                                <h3 data-occasion="Wedding">Gold Spoons</h3>
+                                <div class="product-bottom">
+                                    <strong>2700 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                  <div class="col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/womenwedshose.jpg" alt="Women Gift">
+                            </div>
+                            <div class="product-info">
+                                <small>Women</small>
+                                <h3 data-occasion="Wedding">White Shose</h3>
+                                <div class="product-bottom">
+                                    <strong>950 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                  <div class="col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/womenwed2.jpg" alt="Women Gift">
+                            </div>
+                            <div class="product-info">
+                                <small>Women</small>
+                                <h3 data-occasion="Wedding">Granite Cookware Set</h3>
+                                <div class="product-bottom">
+                                    <strong>24000 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/womenweddres.jpg" alt="Women Gift">
+                            </div>
+                            <div class="product-info">
+                                <small>Women</small>
+                                <h3 data-occasion="Wedding">Wedding Dress</h3>
+                                <div class="product-bottom">
+                                    <strong>50000 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       <div class="col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/womenwedflo.jpg" alt="Women Gift">
+                            </div>
+                            <div class="product-info">
+                                <small>Women</small>
+                                <h3 data-occasion="Wedding">Wedding Flower</h3>
+                                <div class="product-bottom">
+                                    <strong>4500 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                             <div class="col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/womenwed3.jpg" alt="Women Gift">
+                            </div>
+                            <div class="product-info">
+                                <small>Women</small>
+                                <h3 data-occasion="Wedding">Crystal Cup</h3>
+                                <div class="product-bottom">
+                                    <strong>5570 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- ================= MEN GIFTS ================= -->
+        <!-- men gift -->
         <section id="men-gifts" class="py-5">
             <div class="container">
                 <div class="text-center mb-5">
@@ -556,9 +1011,87 @@
                             </div>
                             <div class="product-info">
                                 <small>Men</small>
-                                <h3>Classic Gift</h3>
+                                <h3 data-occasion="Birthday">Classic Gift</h3>
                                 <div class="product-bottom">
                                     <strong>1600 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/men4.jpg"
+                                    alt="Men Gift">
+                            </div>
+                            <div class="product-info">
+                                <small>Men</small>
+                                <h3 data-occasion="Wedding">Belt</h3>
+                                <div class="product-bottom">
+                                    <strong>400 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/menwed3.jpg"
+                                    alt="">
+                            </div>
+                            <div class="product-info">
+                               <small>Men</small>
+                                <h3 data-occasion="Wedding">Beige Wedding Suit </h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>6000 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                         <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <span class="badge-custom">Best Seller</span>
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/men1.jpg"
+                                    alt="Children Gift">
+                            </div>
+                            <div class="product-info">
+                               <small>Men</small>
+                                <h3 data-occasion="Birthday">ًWatch</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>900 EGP</strong>
                                     <button class="cart-btn">
                                         <i class="fa-solid fa-bag-shopping"></i>
                                     </button>
@@ -577,9 +1110,97 @@
                             </div>
                             <div class="product-info">
                                 <small>Men</small>
-                                <h3>Grey Box</h3>
+                                <h3 data-occasion="Valentine's Day">Grey Box</h3>
                                 <div class="product-bottom">
                                     <strong>2500 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <span class="badge-custom">Best Seller</span>
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/menteshirt.jpg"
+                                    alt="">
+                            </div>
+                            <div class="product-info">
+                               <small>Men</small>
+                                <h3 data-occasion="Birthday">Beige T-Shirt</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>1050 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                           <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <span class="badge-custom">Best Seller</span>
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/valmen2.jpg"
+                                    alt="">
+                            </div>
+                            <div class="product-info">
+                               <small>Men</small>
+                                <h3 data-occasion="Valentine's Day">Red Valentine's Box</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>2250 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <span class="badge-custom">Best Seller</span>
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/valmen4.jpg"
+                                    alt="">
+                            </div>
+                            <div class="product-info">
+                               <small>Men</small>
+                                <h3 data-occasion="Valentine's Day">Blue Valentine’s Box</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>3650 EGP</strong>
                                     <button class="cart-btn">
                                         <i class="fa-solid fa-bag-shopping"></i>
                                     </button>
@@ -598,7 +1219,7 @@
                             </div>
                             <div class="product-info">
                                 <small>Men</small>
-                                <h3>Perfume </h3>
+                                <h3 data-occasion="Valentine's Day">Perfume </h3>
                                 <div class="product-bottom">
                                     <strong>800 EGP</strong>
                                     <button class="cart-btn">
@@ -612,7 +1233,7 @@
             </div>
         </section>
 
-        <!-- ================= CHILDREN GIFTS ================= -->
+     <!-- childern -->
         <section id="children-gifts" class="py-5">
             <div class="container">
                 <div class="text-center mb-5">
@@ -629,8 +1250,8 @@
                                 <img src="../img/giftboxboy1.jpg"alt="Children Gift">
                             </div>
                             <div class="product-info">
-                                <small>Boy Child</small>
-                                <h3>School Box</h3>
+                                <small>Children</small>
+                                <h3 data-occasion="Birthday">School Box</h3>
                                 <div class="product-bottom">
                                     <strong>1300 EGP</strong>
                                     <button class="cart-btn">
@@ -646,14 +1267,71 @@
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
+                                <img src="../img/childb.jpg"
+                                    alt="Children Gift">
+                            </div>
+                            <div class="product-info">
+                               <small>Children</small>
+                                <h3 data-occasion="Birthday">car with choclete</h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>500 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
                                 <img src="../img/giftboxboy2.jpg"
                                     alt="Children Gift">
                             </div>
                             <div class="product-info">
-                                <small>Boy Child</small>
-                                <h3>SpiderMan Box</h3>
+                                <small>Children</small>
+                                <h3 data-occasion="Birthday">SpiderMan Box</h3>
                                 <div class="product-bottom">
                                     <strong>1300 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                               <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/childcar.jpg"
+                                    alt="">
+                            </div>
+                            <div class="product-info">
+                               <small>Children</small>
+                                <h3 data-occasion="Birthday">Black Car </h3>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="product-bottom">
+                                    <strong>11800 EGP</strong>
                                     <button class="cart-btn">
                                         <i class="fa-solid fa-bag-shopping"></i>
                                     </button>
@@ -671,8 +1349,8 @@
                                     alt="Children Gift">
                             </div>
                             <div class="product-info">
-                                <small>Boy Child</small>
-                                <h3>Small Cars Box</h3>
+                               <small>Children</small>
+                                <h3 data-occasion="birthday">Small Cars Box</h3>
                                 <div class="product-bottom">
                                     <strong>700 EGP</strong>
                                     <button class="cart-btn">
@@ -692,8 +1370,8 @@
                                     alt="Children Gift">
                             </div>
                             <div class="product-info">
-                                <small>Girl Child</small>
-                                <h3>Purple Box</h3>
+                               <small>Children</small>
+                                <h3 data-occasion="Birthday">Purple Box</h3>
                                 <div class="product-bottom">
                                     <strong>1100 EGP</strong>
                                     <button class="cart-btn">
@@ -713,8 +1391,8 @@
                                     alt="Children Gift">
                             </div>
                             <div class="product-info">
-                                <small>Girl Child</small>
-                                <h3>pink Box</h3>
+                                <small>Children</small>
+                                <h3 data-occasion="Birthday">pink Box</h3>
                                 <div class="product-bottom">
                                     <strong>2000 EGP</strong>
                                     <button class="cart-btn">
@@ -724,6 +1402,7 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
@@ -734,10 +1413,32 @@
                                     alt="Children Gift">
                             </div>
                             <div class="product-info">
-                                <small>Girl Child</small>
-                                <h3>Barbie Toy</h3>
+                                <small>Children</small>
+                                <h3 data-occasion="birthday">Barbie Toy</h3>
                                 <div class="product-bottom">
                                     <strong>400 EGP</strong>
+                                    <button class="cart-btn">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="product-card h-100">
+                            <div class="product-image">
+                                <button class="wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <img src="../img/childbo.jpg"
+                                    alt="Children Gift">
+                            </div>
+                            <div class="product-info">
+                                <small>Children</small>
+                                <h3 data-occasion="Birthday">box Toy</h3>
+                                <div class="product-bottom">
+                                    <strong>730 EGP</strong>
                                     <button class="cart-btn">
                                         <i class="fa-solid fa-bag-shopping"></i>
                                     </button>
@@ -792,11 +1493,12 @@
         </div>
 
     </footer>
-    
+
     <script src="../js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="../js/allgift.js"></script>
 </body>
 
 </html>
