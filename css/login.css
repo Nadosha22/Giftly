@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 0 2rem;
 }
 .form-box{
     display: flex;
@@ -82,8 +83,8 @@ body{
 }
 
 .remember a {
-    color: #d63384;
-    text-decoration: none;
+    color: #d63384 ;
+    text-decoration: none ;
 }
 
 .remember a:hover {
@@ -93,5 +94,7 @@ body{
     font-size: 30px;
     font-weight: bold;
 }
-
-
+.account-text a,#returnhome{
+    color: rgb(174, 18, 44);
+    text-align: center;
+}

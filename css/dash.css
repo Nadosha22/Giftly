@@ -12,6 +12,21 @@
 body{
     background-color: var(--light-second-color);
 }
+.menu-bar {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 5;
+    border: none;
+    background-color: var(--second-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 
 /* Side Bar */
 .side-bar{
@@ -49,9 +64,11 @@ main{
     margin-left: 15rem;
     padding: 2.5rem;
 }
+
 section{
     padding: 0 2rem;
 }
+
 main section {
     display: none;
 }
@@ -85,8 +102,6 @@ main section:target {
     padding-left: 1.5rem;
     line-height: 2rem;
 }
-
-
 
 /* section gift, order, customer*/
 .section-head h2{
@@ -191,4 +206,40 @@ td{
 }
 .info-text .icons{
     color: gold;
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+    .side-bar{
+        left: -17rem;
+        transition: 0.3s ease;
+        z-index: 4;
+    }
+    .side-bar.active{
+        left: 0;
+        padding-top: 4.5rem;
+    }
+    .menu-bar{
+        display: block;
+    }
+    main{
+        margin-left: 0;
+        padding: 4rem 2rem;
+        width: auto;
+    }
+    section{
+        padding: 0;
+    }
+    .section-head h2{
+        font-size: 2rem;
+    }
+    .section-head p{
+        font-size: 1.2rem;
+    }
+    .section-content {
+        overflow-x: auto;
+    }
+    table {
+        min-width: 700px;
+    }
 }

@@ -72,9 +72,6 @@ header a:hover {
     font-style: italic;
     color: var(--main-color);
 }
-.foot-2{
-    padding-left: 3rem;
-}
 .foot-2 h3,.foot-3 h3{
     font-size: 1.6rem;
     color: white;
@@ -97,6 +94,7 @@ header a:hover {
 }
 .foot-3 i{
     font-size: 1.5rem;
+    padding-right: 1rem;
     color: var(--main-color) !important;
 }
 .foot-3 i:hover{
@@ -111,7 +109,7 @@ header a:hover {
     color: var(--main-color) !important;
 }
 
-@media screen and (max-width:786px){
+@media screen and (max-width:992px){
     .fa-bars {
         display: inline;
         padding: 6px;
@@ -137,5 +135,13 @@ header a:hover {
     }
     #check:checked~nav >ul{
         display: flex;
+    }
+}
+@media screen and (max-width:768px) {
+    .foot-2 ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        gap:2rem;
     }
 }
