@@ -37,6 +37,10 @@ main > p {
     flex-direction: column;
     gap: 15px;
 }
+#carthead{
+    text-align: center;
+    color: rgb(121, 10, 28);
+}
 
 .cart-container {
     background-color:rgb(249,219,224);

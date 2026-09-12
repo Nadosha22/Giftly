@@ -167,6 +167,96 @@ td{
     background-color: #eee;
 }
 
+/* Add Product Modal */
+.modal-overlay{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.modal-overlay.active{
+    display: flex;
+}
+.product-modal{
+    width: 450px;
+    background-color: var(--main-color);
+    color: var(--font-color);
+    border: 5px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.product-modal p{
+    color: #777;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.close-modal{
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    border: none;
+    background: none;
+    color: var(--second-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.form-group input,.form-group select{
+    width:100%;
+    height: 2rem;
+    padding: 0px 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: rgb(239, 238, 238);
+    outline: none;
+    transition: 0.3s;
+}
+.form-group input:focus, .form-group select:focus{
+    border: 2px solid var(--font-color);
+}
+.form-group input[type="file"]::file-selector-button {
+    border: none;
+    margin-top: 5px;
+    border-radius: 7px;
+    background-color: var(--font-color);
+    color: white;
+    cursor: pointer;
+}
+.modal-buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+.cancel-btn,.save-btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.cancel-btn{
+    background-color: var(--light-main-color);
+}
+.save-btn{
+    background-color: var(--second-color);
+    color: white;
+}
+
 /* section orders */
 .status{
     padding: 5px 0.5rem;
@@ -209,7 +299,7 @@ td{
 }
 
 /* Responsive */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px){
     .side-bar{
         left: -17rem;
         transition: 0.3s ease;
@@ -247,5 +337,16 @@ td{
     }
     td{
         font-size: 1rem;
+    }
+}
+@media screen and (max-width: 576px){
+    .product-modal{
+        margin: 0 1rem;
+    }
+    .form-group label{
+        font-size: 1rem;
+    }
+    .form-group input,.form-group select{
+        font-size: 12px;
     }
 }

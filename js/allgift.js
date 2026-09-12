@@ -1,3 +1,58 @@
+function createGiftCard(gift) {
+    const productCol = document.createElement("div");
+    productCol.className = "col-12 col-sm-6 col-lg-4 col-xl-3 dynamic-product";
+    productCol.innerHTML = `
+        <div class="product-card h-100">
+            <div class="product-image">
+                <span class="badge-custom">New</span>
+                <button class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="${gift.image}" alt="${gift.name}">
+            </div>
+            <div class="product-info">
+                <small>${gift.category}</small>
+                <h3>${gift.name}</h3>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="product-bottom">
+                    <strong>${gift.price} EGP</strong>
+                    <button class="cart-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+    return productCol;
+}
+function displayAddedGifts() {
+    const gifts = JSON.parse(localStorage.getItem("gifts")) || [];
+    const allContainer = document.getElementById("allProductsContainer");
+    const womenContainer = document.getElementById("womenProductsContainer");
+    const menContainer = document.getElementById("menProductsContainer");
+    const childrenContainer = document.getElementById("childrenProductsContainer");
+    gifts.forEach(gift => {
+        allContainer.appendChild(createGiftCard(gift));
+        // Category Section
+        if (gift.category === "Women") {
+            womenContainer.appendChild(createGiftCard(gift));
+        }
+        else if (gift.category === "Men") {
+            menContainer.appendChild(createGiftCard(gift));
+        }
+        else if (gift.category === "Children") {
+            childrenContainer.appendChild(createGiftCard(gift));
+        }
+    });
+}
+displayAddedGifts();
+
 let search = document.querySelector("#search");
 let category = document.querySelector("#category");
 let occasion = document.querySelector("#occasion");

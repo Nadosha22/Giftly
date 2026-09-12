@@ -1,107 +1,57 @@
-
-
-
-let plusButtons = document.querySelectorAll(".plus");
-
-plusButtons.forEach(function (button) {
-
-    button.addEventListener("click", function () {
-
-        let quantity = button.parentElement.querySelector(".quantity-number");
-
-        let currentNumber = Number(quantity.textContent);
-
-        quantity.textContent = currentNumber + 1;
-
-        updateTotal();
-    });
-
-});
-
-
-
-let minusButtons = document.querySelectorAll(".minus");
-
-minusButtons.forEach(function (button) {
-
-    button.addEventListener("click", function () {
-
-        let quantity = button.parentElement.querySelector(".quantity-number");
-
-        let currentNumber = Number(quantity.textContent);
-
-        if (currentNumber > 1) {
-
-            quantity.textContent = currentNumber - 1;
-
-            updateTotal();
-        }
-
-    });
-
-});
-
-
-
-let removeButtons = document.querySelectorAll(".remove");
-
-removeButtons.forEach(function (button) {
-
-    button.addEventListener("click", function () {
-
-        let item = button.parentElement;
-
-        item.remove();
-
-        updateTotal();
-    });
-
-});
-
-
-function updateTotal() {
-
-    let cartItems = document.querySelectorAll(".cart-container");
-
-    let subtotal = 0;
-
-    cartItems.forEach(function (item) {
-
-        let price = Number(item.dataset.price);
-
-        let quantity = Number(
-            item.querySelector(".quantity-number").textContent
-        );
-
-        subtotal += price * quantity;
-
-    });
-
-
-    
-    let subtotalElement = document.querySelector("#subtotal");
-    let totalElement = document.querySelector("#total");
-
-
-    
-    let shipping = 500;
-
-
-
-    if (subtotalElement) {
-        subtotalElement.textContent = subtotal + " EGP";
-    }
-
-
-    
-    if (totalElement) {
-        totalElement.textContent = (subtotal + shipping) + " EGP";
-    }
-
+function getCart() {
+    return JSON.parse(localStorage.getItem("cart")) || [];
 }
-
-
-
-if (document.querySelector(".cart-container")) {
-    updateTotal();
+function addToCart(product) {
+    let cart = getCart();
+    let existingItem = cart.find(function(item){
+        return item.name === product.name;
+    });
+    if (existingItem) {
+        existingItem.quantity++;
+    }else{
+        cart.push({
+            name: product.name,
+            price: product.price,
+            image: product.image,
+            quantity: 1
+        });
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartCount();
 }
+function updateCartCount(){
+    let cart = getCart();
+    let count = 0;
+    cart.forEach(function(item){
+        count += item.quantity;
+    });
+    let cartCount = document.querySelector(".cart-count");
+    if(cartCount) {
+        cartCount.textContent = count;
+    }
+}
+document.addEventListener("click",function(e){
+    let button = e.target.closest(".cart-btn");
+    if (!button) return;
+    let product = button.closest(".product-card");
+    let name = product.querySelector("h3").textContent.trim();
+    let price = Number(
+        product.querySelector("strong").textContent.replace(/[^0-9.]/g, "")
+    );
+    let image = product.querySelector("img").src;
+    addToCart({
+        name: name,
+        price: price,
+        image: image
+    });
+});
+//Cart Icon all pages
+document.addEventListener("DOMContentLoaded", function () {
+    updateCartCount();
+    let cartIcon = document.querySelector(".cart-icon");
+    if (cartIcon) {
+        cartIcon.addEventListener("click", function () {
+            window.location.href = "cart.html";
+        });
+    }
+});

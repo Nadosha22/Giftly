@@ -42,7 +42,10 @@
         </nav>
         <div class="icons">
             <a href="../html/login.html" class="fa-solid fa-user"></a>
-            <a href="../html/cart.html" class="fa-solid fa-cart-shopping"></a>
+            <div class="cart-icon">
+                <a href="../html/cart.html" class="fa-solid fa-cart-shopping"></a>
+                <span class="cart-count">0</span>
+            </div>   
         </div>
     </header>
 
@@ -56,12 +59,12 @@
                         <input type="text" id="search" class="form-control" placeholder="Searchfor a gift..">
                     </div>
                 </div>
-            
+
                 <div class="row g-4 mb-5">
                     <!-- catogry -->
                     <div class="col-12 col-md-4">
                         <label class="form-label">Category</label>
-                        <select id="category"  class="form-select">
+                        <select id="category" class="form-select">
                             <option selected>All Categories</option>
                             <option>Women</option>
                             <option>Men</option>
@@ -101,7 +104,7 @@
                         <option>Price: High to Low</option>
                     </select>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4" id="allProductsContainer">
                     <!-- PRODUCT 1 -->
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
@@ -110,8 +113,7 @@
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/giftboxwomen1.jpg"
-                                    alt="Women Gift">
+                                <img src="../img/giftboxwomen1.jpg" alt="Women Gift">
                             </div>
                             <div class="product-info">
                                 <small>Women</small>
@@ -133,7 +135,7 @@
                         </div>
                     </div>
                     <!-- PRODUCT 2 -->
-                   
+
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
@@ -141,8 +143,7 @@
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/giftboxmen1.jpg"
-                                    alt="Men Gift">
+                                <img src="../img/giftboxmen1.jpg" alt="Men Gift">
                             </div>
                             <div class="product-info">
                                 <small>Men</small>
@@ -170,8 +171,7 @@
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/giftboxmen2.jpg"
-                                    alt="Men Gift">
+                                <img src="../img/giftboxmen2.jpg" alt="Men Gift">
                             </div>
                             <div class="product-info">
                                 <small>Men</small>
@@ -193,7 +193,7 @@
                         </div>
                     </div>
                     <!-- PRODUCT 3 -->
-                      <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <span class="badge-custom">Best Seller</span>
@@ -229,12 +229,11 @@
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/giftboxgirl1.jpg"
-                                    alt="Children Gift">
+                                <img src="../img/giftboxgirl1.jpg" alt="Children Gift">
                             </div>
                             <div class="product-info">
                                 <small>Children</small>
-                                <h3 data-occasion="Birthday" >Purple Box</h3>
+                                <h3 data-occasion="Birthday">Purple Box</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -251,8 +250,8 @@
                             </div>
                         </div>
                     </div>
-                    
-                                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
@@ -338,7 +337,7 @@
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/giftboxboy1.jpg"alt="Children Gift">
+                                <img src="../img/giftboxboy1.jpg" alt="Children Gift">
                             </div>
                             <div class="product-info">
                                 <small>Children</small>
@@ -359,19 +358,18 @@
                             </div>
                         </div>
                     </div>
-                     <!-- PRODUCT 13 -->
-                                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <!-- PRODUCT 13 -->
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <span class="badge-custom">Best Seller</span>
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/womenwed6.jpg"
-                                    alt="">
+                                <img src="../img/womenwed6.jpg" alt="">
                             </div>
                             <div class="product-info">
-                               <small>Women</small>
+                                <small>Women</small>
                                 <h3 data-occasion="Wedding">Mug Glass</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -389,19 +387,18 @@
                             </div>
                         </div>
                     </div>
-                     <!-- PRODUCT 13 -->
-                                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <!-- PRODUCT 13 -->
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <span class="badge-custom">Best Seller</span>
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/menteshirt.jpg"
-                                    alt="">
+                                <img src="../img/menteshirt.jpg" alt="">
                             </div>
                             <div class="product-info">
-                               <small>Men</small>
+                                <small>Men</small>
                                 <h3 data-occasion="Birthday">Beige T-Shirt</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -419,19 +416,18 @@
                             </div>
                         </div>
                     </div>
-                           <!-- PRODUCT 13 -->
-                                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <!-- PRODUCT 13 -->
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <span class="badge-custom">Best Seller</span>
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/womenwed3.jpg"
-                                    alt="">
+                                <img src="../img/womenwed3.jpg" alt="">
                             </div>
                             <div class="product-info">
-                               <small>Women</small>
+                                <small>Women</small>
                                 <h3 data-occasion="Birthday">Crystal Cup</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -479,15 +475,14 @@
                         </div>
                     </div>
                     <!-- PRODUCT 10 -->
-                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <span class="badge-custom">Best Seller</span>
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/giftboxgirl2.jpg"
-                                    alt="Children Gift">
+                                <img src="../img/giftboxgirl2.jpg" alt="Children Gift">
                             </div>
                             <div class="product-info">
                                 <small>Children</small>
@@ -509,7 +504,7 @@
                         </div>
                     </div>
                     <!-- PRODUCT 11 -->
-                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
@@ -537,8 +532,8 @@
                             </div>
                         </div>
                     </div>
-                    
-                                  <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
@@ -559,18 +554,17 @@
                         </div>
                     </div>
                     <!-- PRODUCT 12 -->
-                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <span class="badge-custom">Best Seller</span>
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/giftboxboy2.jpg"
-                                    alt="Children Gift">
+                                <img src="../img/giftboxboy2.jpg" alt="Children Gift">
                             </div>
                             <div class="product-info">
-                               <small>Children</small>
+                                <small>Children</small>
                                 <h3 data-occasion="Birthday">SpiderMan Box</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -589,18 +583,17 @@
                         </div>
                     </div>
                     <!-- PRODUCT 14 -->
-                                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <span class="badge-custom">Best Seller</span>
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/men1.jpg"
-                                    alt="Children Gift">
+                                <img src="../img/men1.jpg" alt="Children Gift">
                             </div>
                             <div class="product-info">
-                               <small>Men</small>
+                                <small>Men</small>
                                 <h3 data-occasion="Birthday">ًWatch</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -619,17 +612,16 @@
                         </div>
                     </div>
                     <!-- PRODUCT 15 -->
-                                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/childb.jpg"
-                                    alt="Children Gift">
+                                <img src="../img/childb.jpg" alt="Children Gift">
                             </div>
                             <div class="product-info">
-                               <small>Children</small>
+                                <small>Children</small>
                                 <h3 data-occasion="Birthday">car with choclete</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -648,18 +640,17 @@
                         </div>
                     </div>
                     <!-- PRODUCT 16 -->
-                                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <span class="badge-custom">Best Seller</span>
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/women wedsho.jpg"
-                                    alt="">
+                                <img src="../img/women wedsho.jpg" alt="">
                             </div>
                             <div class="product-info">
-                               <small>Women</small>
+                                <small>Women</small>
                                 <h3 data-occasion="Wedding">Bridal sandals </h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -677,18 +668,17 @@
                             </div>
                         </div>
                     </div>
-                     <!-- PRODUCT 17 -->
-                                   <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <!-- PRODUCT 17 -->
+                    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/womenwed.jpg"
-                                    alt="">
+                                <img src="../img/womenwed.jpg" alt="">
                             </div>
                             <div class="product-info">
-                               <small>Women</small>
+                                <small>Women</small>
                                 <h3 data-occasion="Wedding">Couple Mugs </h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -706,18 +696,17 @@
                             </div>
                         </div>
                     </div>
-                     <!-- PRODUCT 18 -->
+                    <!-- PRODUCT 18 -->
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/womenwed4.jpg"
-                                    alt="">
+                                <img src="../img/womenwed4.jpg" alt="">
                             </div>
                             <div class="product-info">
-                               <small>Women</small>
+                                <small>Women</small>
                                 <h3 data-occasion="Wedding">Glass Cup Set </h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -735,18 +724,17 @@
                             </div>
                         </div>
                     </div>
-                         <!-- PRODUCT 19 -->
+                    <!-- PRODUCT 19 -->
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/menwed3.jpg"
-                                    alt="">
+                                <img src="../img/menwed3.jpg" alt="">
                             </div>
                             <div class="product-info">
-                               <small>Men</small>
+                                <small>Men</small>
                                 <h3 data-occasion="Wedding">Beige Wedding Suit </h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -765,18 +753,17 @@
                         </div>
                     </div>
 
-                           <!-- PRODUCT 20 -->
+                    <!-- PRODUCT 20 -->
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/childcar.jpg"
-                                    alt="">
+                                <img src="../img/childcar.jpg" alt="">
                             </div>
                             <div class="product-info">
-                               <small>Children</small>
+                                <small>Children</small>
                                 <h3 data-occasion="Birthday">Black Car </h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -798,22 +785,21 @@
             </div>
         </section>
 
-     <!-- women gift -->
+        <!-- women gift -->
         <section id="women-gifts" class="py-5">
             <div class="container">
                 <div class="text-center mb-5">
                     <h2 class="fw-bold">Women Gifts</h2>
                     <p class="text-secondary">Find a special gift for her</p>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4" id="womenProductsContainer">
                     <div class="col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/giftboxwomen1.jpg"
-                                    alt="Women Gift">
+                                <img src="../img/giftboxwomen1.jpg" alt="Women Gift">
                             </div>
                             <div class="product-info">
                                 <small>Women</small>
@@ -868,7 +854,7 @@
                             </div>
                         </div>
                     </div>
-                                  <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
@@ -888,7 +874,7 @@
                             </div>
                         </div>
                     </div>
-                                  <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
@@ -908,7 +894,7 @@
                             </div>
                         </div>
                     </div>
-                                  <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
@@ -928,7 +914,7 @@
                             </div>
                         </div>
                     </div>
-                     <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
@@ -948,7 +934,7 @@
                             </div>
                         </div>
                     </div>
-                       <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
@@ -968,7 +954,7 @@
                             </div>
                         </div>
                     </div>
-                             <div class="col-sm-6 col-lg-4">
+                    <div class="col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
@@ -999,15 +985,14 @@
                     <h2 class="fw-bold">Men Gifts</h2>
                     <p class="text-secondary">Find a special gift for him</p>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4" id="menProductsContainer">
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/giftboxmen1.jpg"
-                                    alt="Men Gift">
+                                <img src="../img/giftboxmen1.jpg" alt="Men Gift">
                             </div>
                             <div class="product-info">
                                 <small>Men</small>
@@ -1021,14 +1006,13 @@
                             </div>
                         </div>
                     </div>
-                      <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/men4.jpg"
-                                    alt="Men Gift">
+                                <img src="../img/men4.jpg" alt="Men Gift">
                             </div>
                             <div class="product-info">
                                 <small>Men</small>
@@ -1048,11 +1032,10 @@
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/menwed3.jpg"
-                                    alt="">
+                                <img src="../img/menwed3.jpg" alt="">
                             </div>
                             <div class="product-info">
-                               <small>Men</small>
+                                <small>Men</small>
                                 <h3 data-occasion="Wedding">Beige Wedding Suit </h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -1070,18 +1053,17 @@
                             </div>
                         </div>
                     </div>
-                         <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <span class="badge-custom">Best Seller</span>
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/men1.jpg"
-                                    alt="Children Gift">
+                                <img src="../img/men1.jpg" alt="Children Gift">
                             </div>
                             <div class="product-info">
-                               <small>Men</small>
+                                <small>Men</small>
                                 <h3 data-occasion="Birthday">ًWatch</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -1105,8 +1087,7 @@
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/giftboxmen2.jpg"
-                                    alt="Men Gift">
+                                <img src="../img/giftboxmen2.jpg" alt="Men Gift">
                             </div>
                             <div class="product-info">
                                 <small>Men</small>
@@ -1127,11 +1108,10 @@
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/menteshirt.jpg"
-                                    alt="">
+                                <img src="../img/menteshirt.jpg" alt="">
                             </div>
                             <div class="product-info">
-                               <small>Men</small>
+                                <small>Men</small>
                                 <h3 data-occasion="Birthday">Beige T-Shirt</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -1149,18 +1129,17 @@
                             </div>
                         </div>
                     </div>
-                           <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <span class="badge-custom">Best Seller</span>
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/valmen2.jpg"
-                                    alt="">
+                                <img src="../img/valmen2.jpg" alt="">
                             </div>
                             <div class="product-info">
-                               <small>Men</small>
+                                <small>Men</small>
                                 <h3 data-occasion="Valentine's Day">Red Valentine's Box</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -1186,11 +1165,10 @@
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/valmen4.jpg"
-                                    alt="">
+                                <img src="../img/valmen4.jpg" alt="">
                             </div>
                             <div class="product-info">
-                               <small>Men</small>
+                                <small>Men</small>
                                 <h3 data-occasion="Valentine's Day">Blue Valentine’s Box</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -1233,21 +1211,21 @@
             </div>
         </section>
 
-     <!-- childern -->
+        <!-- childern -->
         <section id="children-gifts" class="py-5">
             <div class="container">
                 <div class="text-center mb-5">
                     <h2 class="fw-bold">Children Gifts</h2>
                     <p class="text-secondary">Fun and lovely gifts for little ones</p>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4" id="childrenProductsContainer">
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/giftboxboy1.jpg"alt="Children Gift">
+                                <img src="../img/giftboxboy1.jpg" alt="Children Gift">
                             </div>
                             <div class="product-info">
                                 <small>Children</small>
@@ -1267,11 +1245,10 @@
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/childb.jpg"
-                                    alt="Children Gift">
+                                <img src="../img/childb.jpg" alt="Children Gift">
                             </div>
                             <div class="product-info">
-                               <small>Children</small>
+                                <small>Children</small>
                                 <h3 data-occasion="Birthday">car with choclete</h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -1296,8 +1273,7 @@
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/giftboxboy2.jpg"
-                                    alt="Children Gift">
+                                <img src="../img/giftboxboy2.jpg" alt="Children Gift">
                             </div>
                             <div class="product-info">
                                 <small>Children</small>
@@ -1311,17 +1287,16 @@
                             </div>
                         </div>
                     </div>
-                               <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/childcar.jpg"
-                                    alt="">
+                                <img src="../img/childcar.jpg" alt="">
                             </div>
                             <div class="product-info">
-                               <small>Children</small>
+                                <small>Children</small>
                                 <h3 data-occasion="Birthday">Black Car </h3>
                                 <div class="rating">
                                     <i class="fa-solid fa-star"></i>
@@ -1349,7 +1324,7 @@
                                     alt="Children Gift">
                             </div>
                             <div class="product-info">
-                               <small>Children</small>
+                                <small>Children</small>
                                 <h3 data-occasion="birthday">Small Cars Box</h3>
                                 <div class="product-bottom">
                                     <strong>700 EGP</strong>
@@ -1366,11 +1341,10 @@
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/giftboxgirl1.jpg"
-                                    alt="Children Gift">
+                                <img src="../img/giftboxgirl1.jpg" alt="Children Gift">
                             </div>
                             <div class="product-info">
-                               <small>Children</small>
+                                <small>Children</small>
                                 <h3 data-occasion="Birthday">Purple Box</h3>
                                 <div class="product-bottom">
                                     <strong>1100 EGP</strong>
@@ -1387,8 +1361,7 @@
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/giftboxgirl2.jpg"
-                                    alt="Children Gift">
+                                <img src="../img/giftboxgirl2.jpg" alt="Children Gift">
                             </div>
                             <div class="product-info">
                                 <small>Children</small>
@@ -1402,7 +1375,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
@@ -1424,15 +1397,14 @@
                             </div>
                         </div>
                     </div>
-                      
+
                     <div class="col-12 col-sm-6 col-lg-4">
                         <div class="product-card h-100">
                             <div class="product-image">
                                 <button class="wishlist">
                                     <i class="fa-regular fa-heart"></i>
                                 </button>
-                                <img src="../img/childbo.jpg"
-                                    alt="Children Gift">
+                                <img src="../img/childbo.jpg" alt="Children Gift">
                             </div>
                             <div class="product-info">
                                 <small>Children</small>
@@ -1495,10 +1467,11 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/allgift.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="../js/allgift.js"></script>
 </body>
 
 </html>
